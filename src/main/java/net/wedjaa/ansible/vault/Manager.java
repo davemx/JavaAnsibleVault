@@ -29,7 +29,6 @@ import java.io.StringWriter;
 
 public class Manager
 {
-    Logger logger = LoggerFactory.getLogger(Manager.class);
 
     public Manager()
     {
