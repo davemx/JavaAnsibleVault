@@ -28,7 +28,7 @@ import net.wedjaa.ansible.vault.crypto.decoders.inter.CypherInterface;
 import org.apache.commons.io.IOUtils;
 
 /**
- * Created by mrwho on 03/06/15.
+ *
  */
 public class VaultHandler
 {
