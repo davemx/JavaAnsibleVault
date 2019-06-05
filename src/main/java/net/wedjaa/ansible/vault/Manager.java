@@ -20,8 +20,6 @@ import com.esotericsoftware.yamlbeans.YamlException;
 import com.esotericsoftware.yamlbeans.YamlReader;
 import com.esotericsoftware.yamlbeans.YamlWriter;
 import net.wedjaa.ansible.vault.crypto.VaultHandler;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 import java.io.IOException;
 import java.io.StringReader;
@@ -35,7 +33,7 @@ public class Manager
 
     }
 
-    public Object getFromYaml(Class objectClass, String yaml) throws YamlException
+    public Object getFromYaml(Class<?> objectClass, String yaml) throws YamlException
     {
         YamlReader reader = new YamlReader(new StringReader(yaml));
         return reader.read(objectClass);
